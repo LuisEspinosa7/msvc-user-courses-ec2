@@ -77,6 +77,11 @@ A video exposing the functionality of the proyect in local environment as well a
 
 1. https://youtu.be/RLi9VIkEJ24
 
+
+## Elastic Container Service implementation on AWS
+You will find the ECS deployment implementation on the branch: 
+- <b> ecs-courses-users </b>
+
 ## Development Resources
 I provide the following resources:
 
