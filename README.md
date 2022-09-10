@@ -21,14 +21,6 @@ Courses Users are microservices for creating courses and add user to them. It's 
   </tr>
   <tr>
     <td>
-  	Cache
-    </td>
-    <td>
-  	Redis
-    </td>
-  </tr>
-  <tr>
-    <td>
   	Service discovery	
     </td>
     <td>
@@ -56,7 +48,7 @@ Courses Users are microservices for creating courses and add user to them. It's 
   	IDE	
     </td>
     <td>
-  	Spring Tool Suite
+  	Intellij IDE
     </td>
   </tr>
   <tr>
