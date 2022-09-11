@@ -1,0 +1,42 @@
+##### ECS PHASE #####
+
+VPC vpc-0ee9977d7945c56ad
+Subnet 1 subnet-0c6063ced419fac31
+Subnet 1 route table association rtbassoc-071126576d8570e88
+Subnet 2 subnet-0636bf86c679b39fb
+Subnet 2 route table association rtbassoc-0e460d879e39ea9b3
+VPC Availability Zones us-east-1a, us-east-1b, us-east-1c, us-east-1d, us-east-1e, us-east-1f
+Internet gateway igw-04efa9abbb6115a6d
+Route table rtb-0493b45ce48e9b04d
+Amazon EC2 route EC2Co-Publi-1KD8RJ7DRXB9K
+Virtual private gateway attachment EC2Co-Attac-VYDUJ9446FI3 
+
+
+> TASK DEFINITION
+
+1GB RAM
+
+- Role creation
+AmazonECSTaskExecutionRolePolicy
+-> CustomECSTaskExecutionRole
+
+- Container users
+msvc-usuarios
+
+
+> BUILD USERS IMAGE
+docker build -t usuarios . -f .\msvc-usuarios\Dockerfile
+
+> BUILD COURSES IMAGE
+docker build -t cursos . -f .\msvc-cursos\Dockerfile
+
+
+> Creacion de imagenes a docker hub
+
+docker tag usuarios luisllanos8/usuarios
+
+docker push luisllanos8/usuarios
+
+docker tag cursos luisllanos8/cursos
+
+docker push luisllanos8/cursos
